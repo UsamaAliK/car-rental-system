@@ -185,7 +185,7 @@ public:
     }
 };
 
-class customer {
+class customer  {
 public:
 int  days;
     void rentcar() {
@@ -228,7 +228,7 @@ int  days;
     }
 
     void returncar() {
-        int totalrent;
+        double totalrent;
         string carName;
         cout << "Enter the name of the car you want to return: ";
         getline(cin, carName);
