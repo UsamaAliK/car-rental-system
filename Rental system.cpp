@@ -17,9 +17,9 @@ private:
     double rent;
 
 public:
-    Car() : available(true), rent(0.0) {}
+     Car() : available(true), rent(0.0) {}
 
-    // Getter and Setter methods
+    // Getter and Setter  methods
     string getCname() const { return cname; }
     void setCname(const string& name) { cname = name; }
 
@@ -189,7 +189,7 @@ public:
                         cout << "Color: " << car.getColor() << endl;
                         cout << "Availability: " << (car.isAvailable() ? "Available" : "Not Available") << endl;
                         cout << "Rent: $" << fixed << setprecision(2) << car.getRent() << " per day" << endl;
-                        cout << "----------------------------------\n";
+                        cout << "------------------------------------\n";
                         found = true;
                     }
                     break;
@@ -332,7 +332,7 @@ int main() {
             case 6:
                 return 0;
             default:
-                cout << "Invalid choice. Please try again." << endl;
+                cout << "Invalid choice.  Please try again." << endl;
         }
     }
 }
