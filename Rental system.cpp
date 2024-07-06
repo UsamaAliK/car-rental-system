@@ -16,6 +16,10 @@ private:
     bool available;
     double rent;
 
+
+
+
+
 public:
      Car() : available(true), rent(0.0) {}
 
@@ -39,8 +43,12 @@ public:
     void setRent(double rent_) { rent = rent_; }
 };
 
+
+
 class admin {
 public:
+
+
     void addcar() {
         Car car;
         string temp;
@@ -139,6 +147,10 @@ public:
         bool found = false;
         string line;
 
+
+
+
+
         while (getline(cars, line)) {
             stringstream SC(line);
             Car car;
@@ -169,6 +181,9 @@ public:
                         found = true;
                     }
                     break;
+
+
+
                 case 2:
                     if (searchCriteria == car.getModel()) {
                         cout << "Name: " << car.getCname() << endl;
@@ -181,6 +196,11 @@ public:
                         found = true;
                     }
                     break;
+
+
+
+
+
                 case 3:
                     if (searchCriteria == car.getCompany()) {
                         cout << "Name: " << car.getCname() << endl;
@@ -193,9 +213,16 @@ public:
                         found = true;
                     }
                     break;
+
+
+
+
                 default:
                     cout << "Invalid search option." << endl;
                     break;
+
+
+                    
             }
         }
 
