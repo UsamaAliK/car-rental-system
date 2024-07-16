@@ -45,7 +45,7 @@ public:
 
 
 
-class admin {
+class admin : public Car{
 public:
 
 
@@ -267,7 +267,7 @@ public:
     }
 };
 
-class customer {
+class customer : public admin{
 public:
     int days;
 
